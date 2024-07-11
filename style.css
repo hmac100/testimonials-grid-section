@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--primaryClr-Moderate-violet: hsl(263, 55%, 52%);
+	--primaryClr-Very-dark-grayish-blue: hsl(217, 19%, 35%);
+	--primaryClr-Very-dark-blackish-blue: hsl(219, 29%, 14%);
+	--primaryClr-White: hsl(0, 0%, 100%);
+	--neutralClr--Light-gray: hsl(0, 0%, 81%);
+	--neutralClr--Light-grayish-blue: hsl(210, 46%, 95%);
+	font-family: "Barlow Semi Condensed", sans-serif;
+	font-size: var(--fs);
+	--fw-medium: 500;
+	--fw-semi-bold: 600;
+}
+body {
+	min-height: 100vh;
+	padding-top: 10vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-color: var(--neutralClr--Light-grayish-blue);
+}
+
+main {
+	max-width: 80%;
+}
+
+img {
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	outline: 1px solid white;
+}
+.testimonial-card {
+	padding: 2rem;
+	background-color: antiquewhite;
+	border-radius: 0.5rem;
+}
+.testimonial-text {
+	font-size: 1.3rem;
+	font-family: var(--fw-semi-bold);
+	padding-bottom: 1rem;
+}
+
+.testimonial-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1.7rem;
+}
+.testimonial-card.wide {
+	background-color: aqua;
+	grid-column: span 2;
+}
+.testimonial-card.tall {
+	background-color: aqua;
+	grid-row: span 2;
+}
