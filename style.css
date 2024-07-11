@@ -16,7 +16,7 @@
 	--neutralClr--Light-gray: hsl(0, 0%, 81%);
 	--neutralClr--Light-grayish-blue: hsl(210, 46%, 95%);
 	font-family: "Barlow Semi Condensed", sans-serif;
-	font-size: var(--fs);
+	font-size: 13px;
 	--fw-medium: 500;
 	--fw-semi-bold: 600;
 }
@@ -26,41 +26,92 @@ body {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	line-height: 1.5rem;
 	background-color: var(--neutralClr--Light-grayish-blue);
 }
 
 main {
-	max-width: 80%;
+	max-width: 78%;
 }
 
-img {
+.testimonial__avatar {
 	border-radius: 50%;
 	width: 2rem;
 	height: 2rem;
 	outline: 1px solid white;
 }
-.testimonial-card {
+.testimonial__card {
 	padding: 2rem;
-	background-color: antiquewhite;
+	color: var(--primaryClr-White);
 	border-radius: 0.5rem;
 }
-.testimonial-text {
-	font-size: 1.3rem;
+.testimonial__heading {
+	display: inline-block;
+	padding-left: 1rem;
+	line-height: 1.1rem;
+	transform: translateY(-1px);
+}
+.testimonial__name {
+	font-size: 0.975rem;
+}
+.testimonial__title {
+	font-size: 0.825rem;
+}
+.testimonial__lead {
+	font-size: 1.5rem;
 	font-family: var(--fw-semi-bold);
 	padding-bottom: 1rem;
+	color: var(--primaryClr-White);
+}
+.testimonial__lead:nth-child(4) {
+	color: var(--primaryClr-Very-dark-blackish-blue);
+}
+.testimonial__lead {
+	color: var(--primaryClr-White);
 }
 
+.testimonial__lead {
+	font-size: 1.5rem;
+	font-family: var(--fw-semi-bold);
+	padding-bottom: 1rem;
+	color: hsl(0, 0%, 100%);
+}
+
+.testimonial__card {
+	color: hsla(0, 0%, 100%, 0.5);
+}
 .testimonial-grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	gap: 1.7rem;
+	gap: 1.9rem;
 }
-.testimonial-card.wide {
+.testimonial__card.wide {
 	background-color: aqua;
 	grid-column: span 2;
 }
-.testimonial-card.tall {
-	background-color: aqua;
+.testimonial__card.tall {
 	grid-row: span 2;
+}
+
+.testimonial__card:nth-child(1) {
+	background-color: var(--primaryClr-Moderate-violet);
+}
+.testimonial__card:nth-child(2) {
+	background-color: var(--primaryClr-Very-dark-grayish-blue);
+}
+.testimonial__card:nth-child(3) {
+	background-color: var(--primaryClr-White);
+	color: var(--primaryClr-Very-dark-grayish-blue);
+}
+.testimonial__card:nth-child(4) {
+	background-color: var(--primaryClr-White);
+	color: var(--primaryClr-Very-dark-grayish-blue);
+}
+.testimonial__card:nth-child(5) {
+	background-color: var(--primaryClr-Very-dark-blackish-blue);
+}
+
+.lead-dark {
+	color: var(--primaryClr-Very-dark-grayish-blue);
 }
